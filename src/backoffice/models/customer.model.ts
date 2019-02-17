@@ -6,6 +6,6 @@ export class Customer {
         public document: string,
         public email: string,
         public password: string,
-        public active: boolean
+        public active: boolean,
     ) { }
 }

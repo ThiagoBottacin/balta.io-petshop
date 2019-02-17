@@ -7,25 +7,25 @@ export class CustomerController {
 
     @Get()
     get() {
-        
+
         return 'Obter os clientes';
     }
 
     @Get(':document')
     getById(@Param('document') document) {
-        
+
         return 'Obter o cliente ' + document;
     }
 
     @Post()
     post(@Body() body: Customer) {
-        
+
         return body.name;
     }
 
     @Put(':document')
     put(@Param('document') document, @Body() body) {
-        
+
         return {
             customer: document,
             data:body,
@@ -34,7 +34,7 @@ export class CustomerController {
 
     @Delete(':document')
     delete(@Param('document') document) {
-        
+
         return 'Remover um cliente';
     }
 }
