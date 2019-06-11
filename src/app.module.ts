@@ -5,7 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('CONNECTION_STRING'),
+    MongooseModule.forRoot('mongodb://localhost:27017/petshop'),
     BackofficeModule,
   ],
   controllers: [CustomerController],
